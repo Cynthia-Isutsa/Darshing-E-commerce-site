@@ -3,11 +3,13 @@ import Footer from './Footer/Footer'
 import Header from './Header/Header'
 import Product from './Product/Product'
 import Sidebar from './Sidebar/Sidebar'
+import Hero from './Hero/Hero'
 
 export {
     Cart,
     Footer,
     Header,
     Product,
-    Sidebar
+    Sidebar, 
+    Hero
 }
