@@ -1,7 +1,7 @@
-import Home from './Home/Home'
-import ProductDetails from './ProductDetails/ProductDetails'
+import Home from './Home'
+import ProductDetails from './ProductDetails'
 
 export {
     Home,
-    ProductDetails
+    ProductDetails,
 }
