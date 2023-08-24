@@ -4,12 +4,16 @@ import App from './App.jsx'
 import './index.css'
 //product provider
 import ProductProvider from './contexts/ProductContext/ProductContext.jsx'
+//import sidebar provider
+import SidebarProvider from './contexts/SidebarContext/SidebarContext.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <SidebarProvider>
   <ProductProvider>
       <React.StrictMode>
         <App />
       </React.StrictMode>
   </ProductProvider>
+  </SidebarProvider>
 )
