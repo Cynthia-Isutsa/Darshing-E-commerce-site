@@ -7,7 +7,15 @@ import { Home, ProductDetails } from './Pages'
 const App = () => {
   return (
     <div className='overflow-hidden'>
-    Home Page
+    <Header />
+    <Router>
+      <Routes>
+        <Route path= '/' element ={<Home />} />
+        <Route path= '/product/:id'  element = {<ProductDetails />}/>
+      </Routes>
+    </Router>
+    <Sidebar />
+    <Footer />
     </div>
   )
 }
