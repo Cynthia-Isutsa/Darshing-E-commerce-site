@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 //product provider
-import ProductProvider from './contexts/ProductContext/ProductContext.jsx'
+import ProductProvider from './contexts/ProductContext.jsx'
 //import sidebar provider
-import SidebarProvider from './contexts/SidebarContext/SidebarContext.jsx'
+import SidebarProvider from './contexts/SidebarContext.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

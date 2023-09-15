@@ -7,8 +7,7 @@ import { Home, ProductDetails } from './Pages'
 const App = () => {
   return (
     <div className='overflow-hidden'>
-     
-     
+    Home Page
     </div>
   )
 }
