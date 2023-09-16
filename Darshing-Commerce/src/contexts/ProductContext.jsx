@@ -1,11 +1,26 @@
-import React from 'react'
+import React, {useEffect, useState, createContext} from 'react'
 
-const ProductContext = () => {
+//create context
+export const ProductContext = createContext()
+
+const ProductProvider = ({children}) => {
+//product state
+const [products, setProducts] = useState([])
+//fetch products
+useEffect(() => {
+  const fetchProducts = async () =>{
+    const response = await fetch ('https://fakestoreapi.com/products')
+    const data = await response.json()
+    setProducts(data)
+  }
+  fetchProducts()
+}, [])
   return (
-    <div>
-      Product Context
-    </div>
+    <ProductContext.Provider value={{products}}>
+      {children}
+    </ProductContext.Provider>
+
   )
 }
 
-export default ProductContext
+export default ProductProvider
