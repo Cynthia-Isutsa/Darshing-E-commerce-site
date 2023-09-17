@@ -1,9 +1,27 @@
 import React from 'react'
+//import Link
+import { Link } from 'react-router-dom'
+import {BsPlus, BsEyeFill} from 'react-icons/bs'
 
-const Product = () => {
+const Product = ({product}) => {
+
+const { id, image, title, category, price} = product
+
   return (
     <div>
-      Product
+      <div className='border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition'>
+        <div className='w-full h-full flex justify-center items-center'>
+          {/*image*/}
+          <div className='w-[200px] mx-auto flex justify-center items-center' >
+            <img className='max-h-[160px] group-hover:scale-110 transition duration:300' src={image} alt='product' />
+          </div>
+        </div>
+        {/*buttons */}
+        <div className='absolute top-0 right-0'>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div>2</div>
     </div>
   )
 }
